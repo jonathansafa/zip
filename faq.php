@@ -73,7 +73,7 @@
                                     </div>
                                     <div class="faq-que-ans-block">
                                         <h3>Do your captions meet the ADA requirements?</h3>
-                                        <div class="faq-answer">Yes, our captions are fully compliant with the <a href="http://www.ada.gov/t2hlt95.htm">Americans with Disabilities Act (ADA) 1990 ruling regarding captioning.</a></div>
+                                        <div class="faq-answer">Yes, our captions are fully compliant with the <a href="https://www.3playmedia.com/2015/02/17/legal-requirements-closed-captioning-online-video-us-ada-section-508-cvaa-fcc/">Americans with Disabilities Act (ADA) 1990 ruling regarding captioning.</a></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 col-xs-12">

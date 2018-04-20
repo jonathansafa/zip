@@ -12,7 +12,6 @@
                 <div class="container">
                     <div class="row intro-text">
                         <div class="col-md-6 col-sm-12 col-xs-12 pad-bottom">
-                            <div class="closed-header">Closed Captions &amp; Delivery Service</div>
                             <div class="closed-header-text">We'll caption and deliver your tv show to any network in under 72 hours. Guaranteed.</div>
                             <div class="header-btn"><a class="btn btn-default btn-xl open-nav" href="javascript:void(0)">Start Your First Order</a></div>
                         </div>
@@ -37,17 +36,17 @@
                     <div class="row">
                         <div class="col-md-5 col-sm-12 col-xs-12 pad-bottom text-view">
                             <div class="compliance-head-main">
-                                <div class="compliance-head desk-view">We worry about FCC Compliance</div>
+                                <div class="compliance-head desk-view">We worry about</div>
+                                <div class="compliance-head desk-view">FCC Compliance</div>
                                 <div class="compliance-head mob-view">We worry about</div>
                                 <div class="compliance-head mob-view">FCC Compliance</div>
                                 <div class="compliance-head">so you don't have to.</div>
                             </div>
-                            <div class="compliance-head-text">Our captions are compliant with all FCC standards for accuracy.</div>
-                            <div class="compliance-head-text">Screen placement and timing.</div>
-                            <div class="fcc-btn text-left"><a class="btn-gray btn btn-default btn-xl" href="faq.php">Visit FAQ Page</a></div>
+                            <div class="compliance-head-text">Our captions are compliant with all FCC standards for accuracy, screen placement, and timing.</div>
+                            <div class="fcc-btn text-left"><a class="btn-gray btn btn-default btn-home fcc" href="faq.php">Visit FAQ Page</a></div>
                         </div>
                         <div class="col-md-7 col-sm-12 col-xs-12 img-view-prnt">
-                            <img src="img/home/complince.png" class="img-view" alt="" />
+                            <img src="img/home/compliance.png" class="img-view" alt="" />
                         </div>
                     </div>
                 </div>
@@ -63,10 +62,11 @@
                         <div class="col-md-5 col-sm-12 col-xs-12 pad-bottom text-view">
                             <div class="compliance-head-main">
                                 <div class="compliance-head">Blazing Fast</div>
-                                <div class="compliance-head">Any network in 72 hours or less</div>
+                                <div class="compliance-head">Any network in </div>
+                                <div class="compliance-head">72 hours or less.</div>
                             </div>
                             <div class="compliance-head-text">Speed is our priority.</div>
-                            <div class="compliance-head-text">We promise to deliver final version of your television show complete with closed captioning to any qualifying network in 72 hours. Guaranteed</div>
+                            <div class="compliance-head-text">We promise to deliver a final version of your television show complete with closed captioning to any qualifying network in 72 hours. Guaranteed.</div>
                         </div>
                     </div>
                 </div>
@@ -78,8 +78,8 @@
                     <div class="row">
                         <div class="col-md-5 col-sm-12 col-xs-12 pad-bottom text-view">
                             <div class="compliance-head-main">
-                                <div class="compliance-head">Keep track of your orders </div>
-                                <div class="compliance-head">and receive delivery updates.</div>
+                                <div class="compliance-head">Keep track of your orders and receive delivery updates.</div>
+                                <div class="compliance-head"></div>
                             </div>
                             <div class="compliance-head-text">We'll notify you when networks</div>
                             <div class="compliance-head-text">receive your files and will let you know </div>
@@ -122,7 +122,7 @@ They are the best value for your dollar, hands down!”</p>
                         </div>
                         <div class="testimonial" id="testimonial_4" style="background-image: url('img/bg/reviews-bg-white1.png')">
                             <p>“I know we have a complex file delivery format but zipcaptions nailed it right away. So grateful to have found your services!”</p>
-                            <p class="testimonial-name">- Trinity Broadcasting Network</p>
+                            <p class="testimonial-name">- TBN</p>
                             <p class="text-left testimonial-name-sub">Orange Country, California</p>
                         </div>
                         <div>
@@ -133,7 +133,7 @@ They are the best value for your dollar, hands down!”</p>
                 <section class="footer-review" >
                     <div class="footer-review-head desk-view">Get started with your videos today!</div>
                     <div class="footer-review-head mob-view"> Get started<br/> with your videos today!</div>
-                    <div class="text-center"><a class="btn btn-default btn-xl  open-nav" href="javascript:void(0)">Place Your First Order</a></div>
+                    <div class="text-center"><a class="btn btn-default btn-xl  open-nav" href="javascript:void(0)">HOW TO GET STARTED</a></div>
                 </section>
             </section>
 

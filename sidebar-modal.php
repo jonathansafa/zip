@@ -4,7 +4,7 @@
         <h4 class="sidenav-head">Step 1</h4>
         <div class="sidenav-head-text">Prepare your</div>
         <div class="sidenav-head-text">ready-for-air file.</div>
-        <div><a class="side-btn btn" href="#">DOWNLOAD SPECS</a></div>
+        <div><a class="side-btn btn" target="_blank" href="http://zipcaptions.com/pdf/zipcaptions-delivery-specs.pdf">DOWNLOAD SPECS</a></div>
         <div class="pdf-down">PDF Download</div>
     </div>
     <hr align="center" width="50%"/>
@@ -26,7 +26,7 @@
         <h4 class="sidenav-head">Step 3</h4>
         <div class="sidenav-head-text">Tell us which networks </div>
         <div class="sidenav-head-text">will be airing your program.</div>
-        <div><a class="side-btn btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe0Lj-OAHHnwCxQz-Rr4jratSsiwbR3AS1EETTCkE1yN-n3HA/viewform?usp=sf_link">PLEASE FILL OUT</a></div>
+        <div><a class="side-btn btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe0Lj-OAHHnwCxQz-Rr4jratSsiwbR3AS1EETTCkE1yN-n3HA/viewform?usp=sf_link" target="_blank">PLEASE FILL OUT</a></div>
     </div>
     <hr align="center" width="50%" class="sec-hr"/>
     <div class="side-nav-block">

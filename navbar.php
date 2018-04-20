@@ -16,7 +16,7 @@
                     <a class="nav-link" href="#"  data-toggle="modal" data-target="#myModal">CONTACT</a>
                 </li>
                 <li class="nav-item btn-nv">
-                    <a class="start-link nav-link open-nav"  href="javascript:void(0)">Start Order</a>
+                    <a class="start-link nav-link open-nav"  href="javascript:void(0)">Get Started</a>
                 </li>
             </ul>
         </div>

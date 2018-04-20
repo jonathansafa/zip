@@ -29,13 +29,13 @@
     // Collapse Navbar
     var navbarCollapse = function () {
         if ($(window).width() <= 991) {
-            $("#logo").attr("src", "img/home/new-logo-black.png");
+            $("#logo").attr("src", "img/home/zipcaptions.com-blue.png");
             $("#navbar-container").addClass('container-fluid');
             $("#navbar-container").removeClass('container');
         } else {
             if ($("#mainNav").offset().top > 100) {
                 $("#mainNav").addClass("navbar-shrink");
-                $("#logo").attr("src", "img/home/new-logo-black.png");
+                $("#logo").attr("src", "img/home/zipcaptions.com-blue.png");
             } else {
                 $("#mainNav").removeClass("navbar-shrink");
                 $("#logo").attr("src", "img/home/zipcaptions.com.png");

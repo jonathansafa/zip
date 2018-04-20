@@ -70,12 +70,25 @@ section h3.section-subheading {
 
 .btn-xl {
     font-size: 18px;
-    padding: 10px 40px;
+    font-weight: 600;
+    padding: 12px 45px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
     background: none;
-    border: 2px solid rgba(255,255,255,0.4);
+    /* border: 2px solid rgba(255,255,255,0.4); */ 
+    background-color: #0ea5a0;
+    color: #fff;
+}
+.btn-home {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 45px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.3);
     color: #fff;
 }
 
@@ -256,8 +269,7 @@ img::-moz-selection {
 header.masthead {
     text-align: center;
     color: white;
-    background-color: #4c93d3;
-    background-image: url(../img/bg/large-sections-bg.png);
+    background-image: url(../img/bg/large-sections-bg.png), linear-gradient(-90deg,#3e7fee 15%,#4c8de2 24%,#a8eea6 140%);;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -367,6 +379,7 @@ header.masthead .intro-text .intro-heading {
     }
     .header-btn{
         text-align: center;
+        padding-top:0; padding-bottom:40px
     }
 }
 @media (max-width: 768px) {
@@ -389,22 +402,24 @@ header.masthead .intro-text .intro-heading {
 }
 
 .compliance-head{
-    font-size: 30px;
-    line-height: 25px;
-    color: #222222;
-    font-weight: 600;
+font-size: 39px;
+    line-height: 40px;
+    color: #3c3c3c;
+    font-weight: 500;
     text-align: left;
 }
 .compliance-head-main{
     margin-bottom: 15px;
 }
 .compliance-head-text{
-    color: #6d6d6d;
+      color: #616375;
+    font-weight: 300;
+    font-size: 22px;
 }
 
 .btn-gray{
-    border: 2px solid rgba(109, 109, 109, 0.4);
-    color: #6d6d6d;
+    border: 1px solid rgba(109, 109, 109, 0.2);
+    color: #616375;
     margin-top: 40px;
     font-weight: 700;
 }
@@ -435,7 +450,7 @@ header.masthead .intro-text .intro-heading {
         margin-bottom: 25px;
         font-family: inherit;
         text-transform: uppercase;
-        text-align: left;
+        text-align: center;
     }
 
     .text-view{
@@ -773,7 +788,10 @@ header.masthead .intro-text .intro-heading {
     font-size: 30px;
 }
 .footer-review .btn-xl{
-    font-size: 25px;
+    font-size: 19px;
+    font-weight:800;
+    padding-left:60px;
+    padding-right:60px
 }
 
 #footer{
@@ -950,6 +968,9 @@ header.masthead .intro-text .intro-heading {
     /*    .full-modal .modal-dialog .modal-content .modal-body{
             margin-top: 200px;
         }*/
+    
+    
+    
 }
 @media (max-width: 767px) {
     .contact-us-box{
@@ -958,6 +979,8 @@ header.masthead .intro-text .intro-heading {
     .footer-review-head{
         font-size: 30px;
     }
+    
+    header.masthead .intro-text { padding-top:80px;}
 }
 @media (max-width: 767px) {
     #footer div{
@@ -1069,10 +1092,10 @@ header.masthead .intro-text .intro-heading {
 }
 
 .btn:hover{
-    -webkit-box-shadow: #128c87 0 3px;
+    /* -webkit-box-shadow: #128c87 0 3px;
     -moz-box-shadow: #128c87 0 3px;
-    box-shadow: #128c87 0 3px;
-    background-color: #0ea5a0;
+    box-shadow: #128c87 0 3px; */
+    background-color: #0a8884;
     border-color: transparent;
     color: #fff;
 }
@@ -1180,6 +1203,8 @@ header.masthead .intro-text .intro-heading {
     font-weight: 400;
     color: #677171;}
 
+.faq-answer a {color:grey !important;}
+
 #still-question{
     background: #cafaf9;
 }
@@ -1266,9 +1291,6 @@ header.masthead .intro-text .intro-heading {
     padding-right: 50px;
 }
 
-
-.jonathan{}
-
 .faq-right{
     padding-top: 35px;
     padding-left: 50px;
@@ -1287,9 +1309,12 @@ header.masthead .intro-text .intro-heading {
 .desk-view{
     display: block;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .faq-left{
         display: none;
+    }
+    .faq-right {
+    padding-left: 20px;
     }
 
     .still-right{
@@ -1299,13 +1324,16 @@ header.masthead .intro-text .intro-heading {
         text-align: center !important;
     }
     #logo{
-        margin-left: 10px;
+        margin-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     }
     .compliance-head, .compliance-head-text, .fcc-btn{
         text-align: center !important;
         padding-bottom: 0px !important;
-        line-height: 35px;
+    line-height: 41px;
     }
+    .fcc {margin-top:10px; margin-bottom:20px;}
 }
 
 @media (min-device-width: 768px) and (max-device-width: 992px) {
@@ -1320,7 +1348,7 @@ header.masthead .intro-text .intro-heading {
 @media (max-width: 991px) {
     .mob-view{
         display: block;
-        padding-bottom: 35px;
+        padding-bottom: 20px;
     }
     .desk-view{
         display: none;
