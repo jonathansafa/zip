@@ -177,6 +177,10 @@ function closeNav() {
     document.getElementById("main").style.marginRight = "0";
     document.body.style.backgroundColor = "white";
 }
+//function openChat() {
+ //   (document.getElementsByClassName('frame-content')[0]).click();
+//}
+
 function openChat() {
     (document.getElementsByClassName('crisp-113f7m5')[0]).click();
 }

@@ -12,7 +12,7 @@
                 <div class="container">
                     <div class="row intro-text">
                         <div class="col-md-6 col-sm-12 col-xs-12 pad-bottom">
-                            <div class="closed-header-text">We'll caption and deliver your tv show to any network in under 72 hours. Guaranteed.</div>
+                            <div class="closed-header-text">We'll caption and deliver your tv show to any U.S. station for only $99.<br>Guaranteed.</div>
                             <div class="header-btn"><a class="btn btn-default btn-xl open-nav" href="javascript:void(0)">Start Your First Order</a></div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
@@ -131,9 +131,9 @@ They are the best value for your dollar, hands down!”</p>
                     </div>
                 </section>
                 <section class="footer-review" >
-                    <div class="footer-review-head desk-view">Get started with your videos today!</div>
-                    <div class="footer-review-head mob-view"> Get started<br/> with your videos today!</div>
-                    <div class="text-center"><a class="btn btn-default btn-xl  open-nav" href="javascript:void(0)">HOW TO GET STARTED</a></div>
+                    <div class="footer-review-head">Ready to start?</div>
+                    <div class="footer-review-head small"><p>You're only one step away from a painless file delivery experience!</p></div>
+                    <div class="text-center"><a class="btn btn-default btn-xl  open-nav" href="javascript:void(0)">GET STARTED</a></div>
                 </section>
             </section>
 

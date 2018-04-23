@@ -10,10 +10,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="faq.php">FAQ</a>
+                    <a class="nav-link no-hover" href="faq.php">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"  data-toggle="modal" data-target="#myModal">CONTACT</a>
+                    <a class="nav-link no-hover" href="#"  data-toggle="modal" data-target="#myModal">CONTACT</a>
                 </li>
                 <li class="nav-item btn-nv">
                     <a class="start-link nav-link open-nav"  href="javascript:void(0)">Get Started</a>
