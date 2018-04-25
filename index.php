@@ -115,9 +115,9 @@ They are the best value for your dollar, hands down!”</p>
                             <p class="testimonial-name">- TBN Middle East</p>
                             <p class="text-left testimonial-name-sub">Orange Country, California</p>
                         </div>
-                        <div class="testimonial" id="testimonial_3" style="background-image: url('img/bg/reviews-bg-white1.png')">
-                            <p>“YES! Such good people , such good work. Delivered on time, everytime.”</p>
-                            <p class="testimonial-name">- WPBF</p>
+                        <div class="testimonial" id="testimonial_3" style="background-image: url('img/bg/reviews-bg-white1.png');">
+                            <p>“Many of our closed caption requests are handled by Zipcaptions. The process is extremely turn-key and the pricing can’t be beat which makes our clients very happy! I would refer anyone needing closed captioning services here.”</p>
+                            <p class="testimonial-name">- WPBF TV</p>
                             <p class="text-left testimonial-name-sub">West Plam Beach, Florida</p>
                         </div>
                         <div class="testimonial" id="testimonial_4" style="background-image: url('img/bg/reviews-bg-white1.png')">
