@@ -16,7 +16,7 @@
                             <div class="header-btn"><a class="btn btn-default btn-xl open-nav" href="javascript:void(0)">Start Your First Order</a></div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <img class="home-head-img" src="img/home/99.png" alt=""/>
+                            <img class="home-head-img" src="img/home/home-image.png" alt=""/>
                         </div>
 
                     </div>
@@ -116,7 +116,7 @@ They are the best value for your dollar, hands down!”</p>
                             <p class="text-left testimonial-name-sub">Orange Country, California</p>
                         </div>
                         <div class="testimonial" id="testimonial_3" style="background-image: url('img/bg/reviews-bg-white1.png');">
-                            <p>“Many of our closed caption requests are handled by Zipcaptions. The process is extremely turn-key and the pricing can’t be beat which makes our clients very happy! I would refer anyone needing closed captioning services here.”</p>
+                            <p>"Many of our closed caption requests are handled by Zipcaptions. The process is extremely turn-key and the pricing can’t be beat which makes our clients very happy! I would refer anyone needing CC services to Zipcaptions."</p>
                             <p class="testimonial-name">- WPBF TV</p>
                             <p class="text-left testimonial-name-sub">West Plam Beach, Florida</p>
                         </div>
