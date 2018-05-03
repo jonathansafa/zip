@@ -26,9 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $message = $_POST["message"];
     }
+ 
+    if($error) {
+    die("Connection failed: ");
+}
 
-
-    if (!$error) {
+    else if (!$error) {
         require './SendMail.php';
         require './db.php';
 
@@ -63,6 +66,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = false;
         $name = $email = $message = "";
     }
+    
+   
 }
 ?>
 
@@ -166,6 +171,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                 </div>
             </section>
+            
+            
+            <?php include_once 'footer.php'; ?>
+            
             <?php include_once './scripts.php'; ?>
         </div>
     </body>
