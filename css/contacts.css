@@ -60,6 +60,8 @@ header.contact_masthead, #contact-form, #contact-option{
     #contact-form .container, #contact-option .container{
         max-width: 960px;
     }
+    
+     div:hover p.option-p{color: blue;}
 }
 @media (min-width: 768px){
     header.contact_masthead .intro-text {
@@ -78,6 +80,7 @@ header.contact_masthead, #contact-form, #contact-option{
     .option-p{
         font-size: 13px;
     }
+   
     .contact-head-big-sub{
         font-size: 25px;
         padding-top: 20px;

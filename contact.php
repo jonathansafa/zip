@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require './db.php';
 
         //Insert data in database
-        $sql = "INSERT INTO ENQUIRY (NAME, EMAIL_ID, MESSAGES) " .
+        $sql = "INSERT INTO enquiry (NAME, EMAIL_ID, MESSAGES) " .
                 "VALUES('$name', '$email', '$message')";
         $conn->query($sql);
         $conn->close();
@@ -41,22 +41,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //Send mail to all customer and site owner.
         $mail = new SendMail();
 
-        $subject = 'Greating from zipcaptions.com';
-        $user_tempate = 'Hi ' . $name . ',<br/><br/>' .
+        $subject = 'Getting in Touch - zipcaptions.com';
+        $user_tempate = '<p style="color:#b4b4b2;border-bottom: dotted 1px; padding-bottom:20px;font-weight:normal;font-size:10px;">##- Please type your reply above this line -##</p>' .
+            '<p style="color:black; font-weight:bold;font-size:18px;">Jonathan Safa <a href="https://zipcaptions.com" style="font-size:14px;font-weight:normal; color:black !important; text-decoration:none !important;">(zipcaptions.com)</a><br/><span style="font-size:12px;font-weight:normal; color:grey !important;font-weight:bold;">' .  date(DATE_COOKIE) . '</span><br><br>'  .'</p>' .
+         
+        'Hi ' . $name . ',<br/><br/>' .
                 'Thanks so much for submitting a ticket on our website. We usually respond in less than 1 day. So we\'ll be in touch shortly.<br/><br/>' .
-                'If you want to get in touch immediately, chat with us on ower website... click on the bottom right Chat Logo and we\'ll be in touch in a matter of seconds!<br/><br/><br/>' .
-                'Have a great day!';
+                'If you want to get in touch immediately, chat with us on our website... click on the bottom right Chat Logo and we\'ll be in touch in a matter of seconds!<br/><br/><br/>' .
+                'Have a great day!'  .
+            '<p style="color:#b4b4b2;padding-bottom:20px;padding-top:50px;line-height:20px;font-weight:normal;font-size:10px;">This email is meant for only the intended recipient, and may be a communication privileged by law. If you received this email in error, any review, use, dissemination, distribution, or copying of this email is strictly prohibited - please notify us immediately of the error and please delete this message from your system. Thank you.</p>';
 
         $mail->smtpMail($email, $name, $subject, $user_tempate);
 
-        $subject = 'You get new customer inquiry!!!!';
-        $user_tempate = 'Hello,<br/><br/>' .
+        $subject = 'You have new customer inquiry!!!!';
+        $user_tempate = 'Hello,<br/><br/><br/>' .
                 'Name    : ' . $name . '<br/><br/>' .
                 'Email   : ' . $email . '<br/><br/>' .
-                'Message : ' . $message . '<br/><br/><br/>' .
+                'Message : ' . $message . '<br/><br/><br/><br/>' .
                 'Have a great day!';
 
         $mail->smtpMail('jonathan@zipcaptions.com', 'Jonathan', $subject, $user_tempate);
+
+
 
         $success = true;
         $error = false;
@@ -153,17 +159,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="container">
                     <div class="row text-center">
                         <div class="col">
-                            <div><img src="img/contact/chat-icon.png" width="140px"/></div>
+                            <a href="javascript:void(0)" onclick="openChat();"> <div><img src="img/contact/chat-icon.png" width="140px"/></div>
                             <p class="option-p">Chat</p>
-                        </div>
-                        <div class="col">
+                       </a> </div>
+                        
+                        
+                        <div class="col"><a href='ma&#105;lto&#58;&#104;ell&#111;&#64;zipca&#112;&#116;&#37;69&#37;6F&#110;s&#37;2E%&#54;&#51;&#37;6Fm'>
                             <div><img src="img/contact/email-icon.png" width="140px"/></div>
                             <p class="option-p">hello@zipcaptions.com</p>
-                        </div>
-                        <div class="col">
+                         </a>   </div>
+                      <div class="col">  <a href="tel:9096825815">
                             <div><img src="img/contact/phone-icon.png" width="140px"/></div>
                             <p class="option-p">give us a call</p>
-                        </div>
+                       </a> </div>
                     </div>
                 </div>
             </section>
