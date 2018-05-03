@@ -15,9 +15,4 @@ if (!$conn) {
 echo "Connected successfully";
 ?>
 
-
-
-New files
-
-
 new 
