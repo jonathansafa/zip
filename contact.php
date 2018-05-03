@@ -26,12 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $message = $_POST["message"];
     }
- 
-    if($error) {
-    die("Connection failed: ");
-}
 
-    else if (!$error) {
+ if (!$error) {
         require './SendMail.php';
         require './db.php';
 
