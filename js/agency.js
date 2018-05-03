@@ -38,7 +38,11 @@
                 $("#logo").attr("src", "img/home/zipcaptions.com-blue.png");
             } else {
                 $("#mainNav").removeClass("navbar-shrink");
-                $("#logo").attr("src", "img/home/zipcaptions.com.png");
+                if ($('header').hasClass('contact_masthead')) {
+                    $("#logo").attr("src", "img/home/zipcaptions.com-blue.png");
+                } else {
+                    $("#logo").attr("src", "img/home/zipcaptions.com.png");
+                }
             }
             $("#navbar-container").addClass('container');
             $("#navbar-container").removeClass('container-fluid');
@@ -178,7 +182,7 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 //function openChat() {
- //   (document.getElementsByClassName('frame-content')[0]).click();
+//   (document.getElementsByClassName('frame-content')[0]).click();
 //}
 
 function openChat() {
