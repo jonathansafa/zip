@@ -16,6 +16,8 @@ a {
 a:hover {
     color: rgba(255,255,255,0.85);
 }
+a.email-link {color:#252a2a;padding-bottom: 1px;border-bottom: 1px dotted #aaa;}
+a.email-link:hover {border-bottom: 1px solid #252a2a; text-decoration: none;}
 
 a, input, .btn, div.selector {
     transition: all 0.1s linear;
@@ -1210,6 +1212,11 @@ font-size: 39px;
     padding-bottom: 30px;
     font-weight: 300;
 }
+
+.faq-right-sub b.pointer {padding-bottom:1px; border-bottom: 1px dotted #aaa;}
+.faq-right-sub a {padding-bottom:1px; border-bottom: 1px dotted #aaa;text-decoration: none;}
+.faq-right-sub b.pointer:hover {padding-bottom:1px; border-bottom: 1px solid #252a2a;}
+.faq-right-sub a:hover {padding-bottom:1px; border-bottom: 1px solid #252a2a;text-decoration: none;}
 
 .faq-que-ans-block{
     padding-bottom: 30px;

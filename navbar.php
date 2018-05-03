@@ -1,7 +1,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container" id="navbar-container">
-        <a class="navbar-brand js-scroll-trigger" href="index.php">
+        <a class="navbar-brand js-scroll-trigger" href="https://zipcaptions.com">
             <img id="logo" src="img/home/zipcaptions.com.png"/>
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

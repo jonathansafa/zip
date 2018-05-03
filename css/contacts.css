@@ -1,3 +1,5 @@
+.col:hover p.optionf-p{color: blue;}
+
 header.contact_masthead, #contact-form, #contact-option{
     text-align: center;
     background-color: #f9f9f9;
@@ -61,7 +63,7 @@ header.contact_masthead, #contact-form, #contact-option{
         max-width: 960px;
     }
     
-     div:hover p.option-p{color: blue;}
+  
 }
 @media (min-width: 768px){
     header.contact_masthead .intro-text {

@@ -97,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <div class="faq-sub-block">
                                 <div class="contact-head-small-sub desk-view">Contact our customer support team</div>
                                 <div class="contact-head-small-sub desk-view">by submitting the form below or by emailing us</div>
-                                <div class="contact-head-small-sub desk-view">at support@zipcaptions.com. We're all ears.</div>
+                                <div class="contact-head-small-sub desk-view">at <a class="email-link" href='mail&#116;o&#58;%73%&#55;5pp&#111;r%7&#52;%&#52;&#48;&#122;i&#112;capt&#105;&#37;6F%6Es&#46;%&#54;3om'>support&#64;zipc&#97;ptio&#110;s&#46;co&#109;</a>. We're all ears.</div>
                                 <div class="contact-head-small-sub mob-view">Contact our customer support team by submitting the form below or by emailing us at support@zipcaptions.com. We're all ears.</div> 
                             </div>
                         </div>
@@ -160,17 +160,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="row text-center">
                         <div class="col">
                             <a href="javascript:void(0)" onclick="openChat();"> <div><img src="img/contact/chat-icon.png" width="140px"/></div>
-                            <p class="option-p">Chat</p>
+                            <p class="option-p">Chat with Us</p>
                        </a> </div>
                         
                         
-                        <div class="col"><a href='ma&#105;lto&#58;&#104;ell&#111;&#64;zipca&#112;&#116;&#37;69&#37;6F&#110;s&#37;2E%&#54;&#51;&#37;6Fm'>
+                        <div class="col"><a href='mail&#116;o&#58;%73%&#55;5pp&#111;r%7&#52;%&#52;&#48;&#122;i&#112;capt&#105;&#37;6F%6Es&#46;%&#54;3om'>
                             <div><img src="img/contact/email-icon.png" width="140px"/></div>
-                            <p class="option-p">hello@zipcaptions.com</p>
+                            <p class="option-p">&#115;upp&#111;rt&#64;zip&#99;a&#112;tions&#46;c&#111;&#109;</p>
                          </a>   </div>
                       <div class="col">  <a href="tel:9096825815">
                             <div><img src="img/contact/phone-icon.png" width="140px"/></div>
-                            <p class="option-p">give us a call</p>
+                            <p class="option-p">Give Us a Call</p>
                        </a> </div>
                     </div>
                 </div>

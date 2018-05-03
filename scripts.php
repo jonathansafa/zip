@@ -14,22 +14,3 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 <!-- Custom scripts for this template -->
 <script src="js/agency.js"></script>
-
-
-<script type="text/javascript">
-    window.$crisp = [];
-    window.CRISP_WEBSITE_ID = "fb478540-93d0-49d6-b014-17fcefcc5dcd";
-    (function () {
-        d = document;
-        s = d.createElement("script");
-        s.src = "https://client.crisp.chat/l.js";
-        s.async = 1;
-        d.getElementsByTagName("head")[0].appendChild(s);
-    })();
-
-
-
-</script>
-
-<!--let's try small chat  
-<script src="https://embed.small.chat/T1LMPFFC2GABEX03LN.js" async></script>--> 
