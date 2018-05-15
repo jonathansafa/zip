@@ -11,7 +11,7 @@
             <div class="col-md-3 col-sm-12 col-xs-12 pad-bottom">
                 <div class="footer-head">USERS</div>
                 <div class="footer-head-text"><a href="#">Sign In</a></div>
-                <div class="footer-head-text"><a href="#">Support-Call</a></div>
+                <div class="footer-head-text"><a href="tel:800-495-0251">Support-Call</a></div>
                 <div class="footer-head-text"><a href='m&#97;&#105;l&#116;o&#58;su%70&#37;70o%72t&#64;zip%63%&#54;1p%7&#52;%69on&#37;&#55;3&#46;c&#111;%6D'>Support-Email</a></div>
                 <div class="footer-head-text"><a href="javascript:void(0)" onclick="openChat();">Support-Chat</a></div>
             </div>
