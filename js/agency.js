@@ -151,6 +151,11 @@
 
     });
 
+    $("#nav-toggle").click(function () {
+        this.classList.toggle("active");
+        $("#navbarResponsive2").fadeToggle("fast");
+//        $("#navbarResponsive2").fadeToggle(500);
+    });
 
 })(jQuery); // End of use strict
 

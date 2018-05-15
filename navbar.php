@@ -23,3 +23,67 @@
     </div>
 </nav>
 <div class="jPanelMenu-overlay open-nav" style="opacity: 0;display: none;"></div>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav2">
+    <div class="container-fluid" id="navbar-container">
+        <a id="nav-toggle" href="javascript:void(0)"><span></span></a>
+        <!--<a id="nav-toggle" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarResponsive2" aria-controls="navbarResponsive2" aria-expanded="false" aria-label="Toggle navigation"><span></span></a>-->
+        <a class="navbar-brand js-scroll-trigger" href="https://zipcaptions.com">
+            <img id="logo" src="img/home/zipcaptions.com-blue.png"/>
+        </a>
+        <a class="how  open-nav" href="javascript:void(0)">How?</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive2">
+        <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+                <a class="nav-link no-hover mob-nav-a" href="index.php">
+                    <div class="mob-nav-img">
+                        <img src="img/mobile/home-icon.png" width="50px"/>
+                    </div>
+                    <div class="mob-nav-text-div">
+                        <h3>Home page and details</h3>
+                        <p>72 hours turnaround, ant U.S. network, all for only $99.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link no-hover mob-nav-a" href="faq.php">
+                    <div class="mob-nav-img">
+                        <img src="img/mobile/FAQ-icon.png" width="50px"/>
+                    </div>
+                    <div class="mob-nav-text-div">
+                        <h3>Frequently Asked Questions</h3>
+                        <p>Find answers to Frequently Asked Questions.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link no-hover mob-nav-a" href="contact.php">
+                    <div class="mob-nav-img">
+                        <img src="img/mobile/mail-icon.png" width="50px"/>
+                    </div>
+                    <div class="mob-nav-text-div">
+                        <h3>CONTACT US</h3>
+                        <p>We'd love to hear from you.<br/>Use our form and be in touch!</p>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link no-hover mob-nav-a mob-nav-dir-link" href="javascript:void(0)" onclick="openChat();">Chat with Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="start-link nav-link  mob-nav-a mob-nav-dir-link"  href="tel:9096825815">Phone Support</a>
+            </li>
+            <li class="nav-item">
+                <a class="start-link nav-link  mob-nav-a mob-nav-dir-link"  href="mailto:support@zipcaptions.com">Email Support</a>
+            </li>
+            <li class="nav-item">
+                <a class="start-link nav-link  mob-nav-a-btn mob-nav-btn-link"  href="javascript:void(0)">
+                    <button class="btn btn-started  open-nav">GET STARTED</button>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
