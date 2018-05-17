@@ -109,7 +109,7 @@
                             <div class="fcc-btn text-left"><a class="btn-gray btn btn-default btn-xl" href="faq.php">Visit FAQ Page</a></div>
                         </div>
                         <div class="col-md-7 col-sm-12 col-xs-12 ">
-                            <img src="img/home/compliance.png" class="img-view" alt="" />
+                            <img src="img/home/closed-captioning.jpg" class="img-view" alt="" />
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-7 col-sm-12 col-xs-12 ">
-                            <img src="img/home/fast.png" class="img-view" alt="" />
+                            <img src="img/home/fast.jpg" class="img-view" alt="" />
                         </div>
                         <div class="col-md-5 col-sm-12 col-xs-12 pad-bottom text-view">
                             <div class="compliance-head-main">
