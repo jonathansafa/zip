@@ -8,16 +8,16 @@
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <!-- Plugin Animation -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 <!-- Custom scripts for this template -->
 <script src="js/agency.js"></script>
 
 
 <!-- crisp chat -->
-<script type="text/javascript">
+<script async type="text/javascript">
                     window.$crisp = [];
                     window.CRISP_WEBSITE_ID = "fb478540-93d0-49d6-b014-17fcefcc5dcd";
                     (function () {
