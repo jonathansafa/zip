@@ -27,7 +27,13 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav2">
     <div class="container-fluid" id="navbar-container">
-        <a id="nav-toggle" href="javascript:void(0)"><span></span></a>
+        <!--<a id="nav-toggle" href="javascript:void(0)"><span></span></a>-->
+        <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <!--<a id="nav-toggle" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarResponsive2" aria-controls="navbarResponsive2" aria-expanded="false" aria-label="Toggle navigation"><span></span></a>-->
         <a class="navbar-brand js-scroll-trigger" href="https://zipcaptions.com">
             <img id="logo" src="img/home/zipcaptions.com-blue.png"/>

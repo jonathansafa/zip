@@ -47,7 +47,7 @@
             $("#navbar-container").addClass('container');
             $("#navbar-container").removeClass('container-fluid');
         }
-
+        $('#navbarResponsive2').css('height', $(window).height() - 60);
     };
     // Collapse now if page is not at top
     navbarCollapse();
@@ -154,7 +154,25 @@
     $("#nav-toggle").click(function () {
         this.classList.toggle("active");
         $("#navbarResponsive2").fadeToggle("fast");
-//        $("#navbarResponsive2").fadeToggle(500);
+        if ($("body").hasClass('noscroll')) {
+            $("body").removeClass('noscroll');
+            $('body').css('height', $(window).height() - 60);
+        } else {
+            $("body").addClass('noscroll');
+            $('body').css('height', 'auto');
+        }
+    });
+
+    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+        $(this).toggleClass('open');
+        $("#navbarResponsive2").fadeToggle("fast");
+        if ($("body").hasClass('noscroll')) {
+            $("body").removeClass('noscroll');
+            $('body').css('height', 'auto');
+        } else {
+            $("body").addClass('noscroll');
+            $('body').css('height', $(window).height() - 60);
+        }
     });
 
 })(jQuery); // End of use strict

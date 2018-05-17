@@ -1,0 +1,12 @@
+[02-May-2018 21:15:53] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'PHPMailer\PHPMailer\PHPMailer' (include_path='.:/usr/lib64/php:/usr/share/pear') in /home3/rulqutmy/public_html/SendMail.php on line 3
+[02-May-2018 21:16:28] PHP Warning:  require_once(__DIR__/composer/autoload_real.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home3/rulqutmy/public_html/vendors/autoload.php on line 5
+[02-May-2018 21:16:28] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/composer/autoload_real.php' (include_path='.:/usr/lib64/php:/usr/share/pear') in /home3/rulqutmy/public_html/vendors/autoload.php on line 5
+[02-May-2018 21:22:46] PHP Fatal error:  Class 'SendMail' not found in /home3/rulqutmy/public_html/contact.php on line 42
+[03-May-2018 00:48:35 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home3/rulqutmy/public_html/contact.php on line 48
+[03-May-2018 00:49:15 America/Chicago] PHP Parse error:  syntax error, unexpected ''Hi '' (T_CONSTANT_ENCAPSED_STRING) in /home3/rulqutmy/public_html/contact.php on line 49
+[03-May-2018 00:49:56 America/Chicago] PHP Warning:  date() expects at least 1 parameter, 0 given in /home3/rulqutmy/public_html/contact.php on line 48
+[03-May-2018 00:52:54 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home3/rulqutmy/public_html/contact.php on line 48
+[03-May-2018 00:53:09 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home3/rulqutmy/public_html/contact.php on line 48
+[03-May-2018 00:53:10 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home3/rulqutmy/public_html/contact.php on line 48
+[03-May-2018 01:03:49 America/Chicago] PHP Parse error:  syntax error, unexpected 'date' (T_STRING) in /home3/rulqutmy/public_html/contact.php on line 47
+[03-May-2018 11:16:13 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home3/rulqutmy/public_html/contact.php on line 47
