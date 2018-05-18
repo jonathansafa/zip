@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link rel="canonical" href="https://zipcaptions.com" />
     <?php include_once 'head.php' ?>
 
     <body id="page-top">

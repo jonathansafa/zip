@@ -2,10 +2,10 @@
     <meta charset="utf-8">
     <meta name="google-site-verification" content="JLrrNXFFGWTnLPLvlEbUEX9EDBhb7I7z6MJikuKZHsM" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Closed Captions, Encoding, Delivery to Network - $99 ONLY">
+    <meta name="description" content="Zipcaptions provides closed captioning services and subtitling. Contact us today and ask about our 24-hour turnaround!">
     <meta name="author" content="www.zipcaptions.com">
 
-    <title>Closed Captions, Encoding, Delivery to Network - $99 ONLY</title>
+    <title>Closed Captioning Services | Zipcaptions Closed Captions</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

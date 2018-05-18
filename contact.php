@@ -75,6 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="en">
+<link rel="canonical" href="https://zipcaptions.com/contact" />
 
     <?php include_once 'head.php' ?>
 
