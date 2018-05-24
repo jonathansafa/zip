@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container" id="navbar-container">
         <a class="navbar-brand js-scroll-trigger" href="https://zipcaptions.com">
-            <img id="logo" src="img/home/zipcaptions.com.png"/>
+            <img id="logo" src="<?= SITE_URL ?>/img/home/zipcaptions.com.png"/>
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars"></i>
@@ -10,10 +10,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link no-hover" href="faq.php">FAQ</a>
+                    <a class="nav-link no-hover" href="<?= SITE_URL ?>/faq">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link no-hover" href="contact.php" >CONTACT</a> <!--  data-toggle="modal" data-target="#myModal"-->
+                    <a class="nav-link no-hover" href="<?= SITE_URL ?>/contact" >CONTACT</a> <!--  data-toggle="modal" data-target="#myModal"-->
                 </li>
                 <li class="nav-item btn-nv">
                     <a class="start-link nav-link open-nav"  href="javascript:void(0)">Get Started</a>
@@ -36,7 +36,7 @@
         </div>
         <!--<a id="nav-toggle" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarResponsive2" aria-controls="navbarResponsive2" aria-expanded="false" aria-label="Toggle navigation"><span></span></a>-->
         <a class="navbar-brand js-scroll-trigger" href="https://zipcaptions.com">
-            <img id="logo" src="img/home/zipcaptions.com-blue.png"/>
+            <img id="logo" src="<?= SITE_URL ?>/img/home/zipcaptions.com-blue.png"/>
         </a>
         <a class="how  open-nav" href="javascript:void(0)">How?</a>
 
@@ -46,7 +46,7 @@
             <li class="nav-item">
                 <a class="nav-link no-hover mob-nav-a" href="index.php">
                     <div class="mob-nav-img">
-                        <img src="img/mobile/home-icon.png" width="50px"/>
+                        <img src="<?= SITE_URL ?>/img/mobile/home-icon.png" width="50px"/>
                     </div>
                     <div class="mob-nav-text-div">
                         <h3>Home page and details</h3>
@@ -55,9 +55,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link no-hover mob-nav-a" href="faq.php">
+                <a class="nav-link no-hover mob-nav-a" href="./faq">
                     <div class="mob-nav-img">
-                        <img src="img/mobile/FAQ-icon.png" width="50px"/>
+                        <img src="<?= SITE_URL ?>/img/mobile/FAQ-icon.png" width="50px"/>
                     </div>
                     <div class="mob-nav-text-div">
                         <h3>Frequently Asked Questions</h3>
@@ -66,9 +66,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link no-hover mob-nav-a" href="contact.php">
+                <a class="nav-link no-hover mob-nav-a" href="./contact">
                     <div class="mob-nav-img">
-                        <img src="img/mobile/mail-icon.png" width="50px"/>
+                        <img src="<?= SITE_URL ?>/img/mobile/mail-icon.png" width="50px"/>
                     </div>
                     <div class="mob-nav-text-div">
                         <h3>CONTACT US</h3>

@@ -1,120 +1,188 @@
+<?php
+// define variables and set to empty values
+$nameErrClass = $emailErrClass = $messageErrClass = $errorMsg = "";
+$name = $email = $message = "";
+$success = $error = false;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["name"])) {
+        $nameErrClass = "error";
+        $error = true;
+    } else {
+        $name = stripslashes($_POST["name"]);
+    }
+    if (empty($_POST["email_id"])) {
+        $emailErrClass = "error";
+        $error = true;
+    } else {
+        $email = stripslashes($_POST["email_id"]);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $errorMsg = "Invalid email format";
+        }
+    }
+
+    if (empty($_POST["message"])) {
+        $messageErrClass = "error";
+        $error = true;
+    } else {
+        $message = $_POST["message"];
+    }
+
+    if (!$error) {
+        require '../SendMail.php';
+        require '../db.php';
+
+        //Insert data in database
+        $sql = "INSERT INTO enquiry (NAME, EMAIL_ID, MESSAGES) " .
+                "VALUES('$name', '$email', '$message')";
+        $conn->query($sql);
+        $conn->close();
+
+
+        //Send mail to all customer and site owner.
+        $mail = new SendMail();
+
+        $subject = 'Getting in Touch - zipcaptions.com';
+        $user_tempate = '<p style="color:#b4b4b2;border-bottom: dotted 1px; padding-bottom:20px;font-weight:normal;font-size:10px;">##- Please type your reply above this line -##</p>' .
+                '<p style="color:black; font-weight:bold;font-size:18px;">Jonathan Safa <a href="https://zipcaptions.com" style="font-size:14px;font-weight:normal; color:black !important; text-decoration:none !important;">(zipcaptions.com)</a><br/><span style="font-size:12px;font-weight:normal; color:grey !important;font-weight:bold;">' . date(DATE_COOKIE) . '</span><br><br>' . '</p>' .
+                'Hi ' . $name . ',<br/><br/>' .
+                'Thanks so much for submitting a ticket on our website. We usually respond in less than 1 day. So we\'ll be in touch shortly.<br/><br/>' .
+                'If you want to get in touch immediately, chat with us on our website... click on the bottom right Chat Logo and we\'ll be in touch in a matter of seconds!<br/><br/><br/>' .
+                'Have a great day!' .
+                '<p style="color:#b4b4b2;padding-bottom:20px;padding-top:50px;line-height:20px;font-weight:normal;font-size:10px;">This email is meant for only the intended recipient, and may be a communication privileged by law. If you received this email in error, any review, use, dissemination, distribution, or copying of this email is strictly prohibited - please notify us immediately of the error and please delete this message from your system. Thank you.</p>';
+
+        $mail->smtpMail($email, $name, $subject, $user_tempate);
+
+        $subject = 'You have new customer inquiry!!!!';
+        $user_tempate = 'Hello,<br/><br/><br/>' .
+                'Name    : ' . $name . '<br/><br/>' .
+                'Email   : ' . $email . '<br/><br/>' .
+                'Message : ' . $message . '<br/><br/><br/><br/>' .
+                'Have a great day!';
+
+        $mail->smtpMail('jonathan@zipcaptions.com', 'Jonathan', $subject, $user_tempate);
+
+
+
+        $success = true;
+        $error = false;
+        $name = $email = $message = "";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="canonical" href="https://zipcaptions.com/contact" />
 
-    <?php include_once 'head.php' ?>
+    <head>
+        <meta name="description" content="We’d love to discuss how zipcaptions is the leader in closed captioning your videos.">
+        <title>Contact Us</title>
+        <?php include_once '../head.php' ?>
+    </head>
 
     <body id="page-top">
-        <?php include_once 'sidebar-modal.php' ?>
+        <link href="<?= SITE_URL ?>/css/contacts.css" rel="stylesheet">
+        <?php include_once '../sidebar-modal.php' ?>
         <div id="main-view">
-            <?php include_once 'navbar.php' ?>
+            <?php include_once '../navbar.php' ?>
             <!-- Header -->
-            <header class="masthead">
+            <header class="contact_masthead masthead">
                 <div class="container">
                     <div class="row intro-text">
                         <div class="col-md-12 col-sm-12 col-xs-12 pad-bottom">
-                            <div class="faq-head-small">Frequently Asked Questions</div>
-                            <div class="faq-head-big">Coordinating with TV Networks?</div>
-                            <div class="faq-head-big">We got this.</div>
-                            <div class="faq-sub-block">
-                                <div class="faq-head-small-sub desk-view">We make it easy to caption your program</div>
-                                <div class="faq-head-small-sub desk-view">and deliver it to just about any TV network in the United States.</div>
-                                <div class="faq-head-small-sub desk-view">And the best part? We charge only $99 per program.</div>
-                                <div class="faq-head-small-sub mob-view">We make it easy to caption your program and deliver it to just about any TV network in the United States.And the best part? We charge only $99 per program.</div> 
+                            <div class="contact-head-small">CONTACT US</div>
+                            <div class="contact-head-big">Questions or comments?</div>
+                            <div class="contact-head-big-sub">We'd love to hear from you.</div>
+                            <div class="contact-sub-block">
+                                <div class="contact-head-small-sub">Your questions and comment are important to us.</div>
                             </div>
-                            <div class="text-center"><a class="btn faq-start-order btn-default btn-xl open-nav" href="javascript:void(0)">Get Started Now</a></div>
+                            <div class="faq-sub-block">
+                                <div class="contact-head-small-sub desk-view">Contact our customer support team</div>
+                                <div class="contact-head-small-sub desk-view">by submitting the form below or by emailing us</div>
+                                <div class="contact-head-small-sub desk-view">at <a class="email-link" href='mail&#116;o&#58;%73%&#55;5pp&#111;r%7&#52;%&#52;&#48;&#122;i&#112;capt&#105;&#37;6F%6Es&#46;%&#54;3om'>support&#64;zipc&#97;ptio&#110;s&#46;co&#109;</a>. We're all ears.</div>
+                                <div class="contact-head-small-sub mob-view">Contact our customer support team by submitting the form below or by emailing us at support@zipcaptions.com. We're all ears.</div> 
+                            </div>
                         </div>
                     </div>
                 </div>
             </header>
 
-            <!-- details -->
-            <section id="faq">
+            <!-- contact-form -->
+            <section id="contact-form">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-12 col-xs-12 faq-left pad-bottom text-view text-right">
-                            <div class="faq-row">
-                                <h6 class="faq-left-head">QUESTIONS?</h6>
-                                <div><a class="faq-a" href="tel:+9096825815">(909) 682-5815</a></div>
-                                <div><a class="faq-a" href='ma&#105;lto&#58;&#104;ell&#111;&#64;zipca&#112;&#116;&#37;69&#37;6F&#110;s&#37;2E%&#54;&#51;&#37;6Fm'>h&#101;llo&#64;z&#105;pcap&#116;i&#111;&#110;s&#46;com</a></div>
-                                <div><a class="faq-a" href="javascript:void(0)" onclick="openChat();">Chat With Us</a></div>
+                    <?php
+                    if ($success) {
+                        ?>
+                        <div class="alert alert-success">
+                            <strong>Success!</strong> We'll be in touch shortly.
+                        </div>
+                    <?php } ?>
+                    <?php
+                    if ($error) {
+                        ?>
+                        <div class="alert alert-danger">
+                            <?php
+                            if (!empty($errorMsg)) {
+                                ?>
+                                <?= $errorMsg ?>
+                                <?php
+                            } else {
+                                ?>
+                                <strong>Error!</strong> Please fill required details.
+                            <?php }
+                            ?>
+                        </div>
+                    <?php } ?>
+                    <form class="form-horizontal" method="post">
+                        <div class="row form-group">
+                            <div class="col-md-6 col-xs-6 col-xs-12 mob-padd">
+                                <input type="text" class="<?= $nameErrClass ?> form-control" name="name" id="name" placeholder="NAME" value="<?= $name ?>">
                             </div>
-                            <div class="faq-row">
-                                <h6 class="faq-left-head">Pricing</h6>
-                                <div>$99 per 30/min program</div>
-                            </div>
-                            <div class="faq-row">
-                                <h6 class="faq-left-head">FCC COMPLIANCE</h6>
-                                <div>We guarantee our captions meet all FCC requirements for television broadcast.</div>
-                            </div>
-                            <div class="faq-row">
-                                <h6 class="faq-left-head">SECURE AND CONFIDENTIAL</h6>
-                                <div>Your files are securely stored and transmitted using 128-bit SSL encryption, the highest level of security available. We never store credit card information -we simple pass it securely to our bank for safe-keeping.</div>
-                                <div>We will never share your files or personal information with anyone outside of zipcaptions.com.</div>
+                            <div class="col-md-6 col-xs-6 col-xs-12">
+                                <input type="email" class="<?= $emailErrClass ?> form-control" name="email_id" id="email_id" placeholder="EMAIL"  value="<?= $email ?>">
                             </div>
                         </div>
-                        <div class="col-md-9 col-sm-12 col-xs-12 faq-right">
-                            <h1 style="font-weight:800; color:#252a2d !important;">Frequently Asked Questions</h1>
-                            <div class="faq-right-sub">Don't want to search through the FAQs for an answer? No problem. Feel free to <span><b onclick="openChat();" class="pointer" style="font-weight:600;">chat with us</b></span> real quick, or drop our <a href='ma&#105;lto&#58;&#104;ell&#111;&#64;zipca&#112;&#116;&#37;69&#37;6F&#110;s&#37;2E%&#54;&#51;&#37;6Fm' style="font-weight:600;
-    color: #212529;">support team</a> an email. We'll be sure to get back to you ASAP!</div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12 col-xs-12">
-                                    <div class="faq-que-ans-block">
-                                        <h3>What video file formats can you accept?</h3>
-                                        <div class="faq-answer">We can accept all common digital video formats, such as MOV, AVI and MP4.</div>
-                                    </div>
-                                    <div class="faq-que-ans-block">
-                                        <h3>How can we get our videos to zipcaptions?</h3>
-                                        <div class="faq-answer">Most customers use FTP to deliver their highest quality files to us. Please use our chat, or email us to receive your personalized FTP to securely upload your files.</div>
-                                    </div>
-                                   
-                                    <div class="faq-que-ans-block">
-                                        <h3>Do your captions meet the FCC requirements?</h3>
-                                        <div class="faq-answer">Yes, we guarantee our caption files meet FCC requirements for open and closed captioning of web and tv video. Our caption files meet Section 508 requirements for video captioning.</div>
-                                    </div>
-                                    <div class="faq-que-ans-block">
-                                        <h3>Do your captions meet the ADA requirements?</h3>
-                                        <div class="faq-answer">Yes, our captions are fully compliant with the <a href="https://www.3playmedia.com/2015/02/17/legal-requirements-closed-captioning-online-video-us-ada-section-508-cvaa-fcc/">Americans with Disabilities Act (ADA) 1990 ruling regarding captioning.</a></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12 col-xs-12">
-                                    <div class="faq-que-ans-block">
-                                        <h3>Do you need full-resolution, master video files?</h3>
-                                        <div class="faq-answer">Yes! We are able to streamline our process since we don't master your production files. Please send us the highest quality, ready-for-air mastered video file. We attach a caption file to what you've already produced, and send it off to any network you need!</div>
-                                    </div>    
-                                    <div class="faq-que-ans-block">
-                                        <h3>Can I receive my caption file back?</h3>
-                                        <div class="faq-answer">Yes! We ensure the caption file is placed in your FTP after delivery of your program.</div>
-                                    </div>
-                                    <div class="faq-que-ans-block">
-                                        <h3>Do you have an extra charge for each network? </h3>
-                                        <div class="faq-answer">The first network for delivery is free. Every tv network we are required to deliver to thereafter is an additional $50/network. </div>
-                                    </div>
-                                    <div class="faq-que-ans-block">
-                                        <h3>Can you explain your moneyback guarantee?</h3>
-                                        <div class="faq-answer">Simply, if the tv network(s) do not receive a fully ready-for-air captioned program from us within 72 hours of your FTP upload, then you do not pay!</div>
-                                    </div>
-                                </div>
+                        <div class="row form-group">
+                            <div class="col-md-12 col-xs-12 col-xs-12">
+                                <textarea  class="<?= $messageErrClass ?> form-control"  name="message" id="message" placeholder="MESSAGE" rows="10"><?= $message ?></textarea>
                             </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-12 col-xs-12 col-xs-12">
+                                <button type="submit" class="btn send-msg form-btn btn-default">SEND MESSAGE</button>
+                            </div>
+                        </div>
+                    </form>
 
-                        </div>
+                </div>
+            </section>
+            <!-- contact-option -->
+            <section id="contact-option">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col">
+                            <a href="javascript:void(0)" onclick="openChat();"> <div><img src="<?= SITE_URL ?>/img/contact/chat-icon.png" width="140px"/></div>
+                                <p class="option-p">Chat with Us</p>
+                            </a> </div>
+
+
+                        <div class="col"><a href='mail&#116;o&#58;%73%&#55;5pp&#111;r%7&#52;%&#52;&#48;&#122;i&#112;capt&#105;&#37;6F%6Es&#46;%&#54;3om'>
+                                <div><img src="<?= SITE_URL ?>/img/contact/email-icon.png" width="140px"/></div>
+                                <p class="option-p">&#115;upp&#111;rt&#64;zip&#99;a&#112;tions&#46;c&#111;&#109;</p>
+                            </a>   </div>
+                        <div class="col">  <a href="tel:9096825815">
+                                <div><img src="<?= SITE_URL ?>/img/contact/phone-icon.png" width="140px"/></div>
+                                <p class="option-p">Give Us a Call</p>
+                            </a> </div>
                     </div>
                 </div>
             </section>
-            <section id="still-question">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-6 still-right">
-                            <h3>Still have questions?</h3>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-6 still-left">
-                            <a class="btn btn-default btn-xl faq-chat" href="javascript:void(0)" onclick="openChat();">CHAT WITH US <i class="fa fa-comment" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-            </section>
-            <?php include_once 'footer.php'; ?>
 
+
+            <?php include_once '../footer.php'; ?>
+
+            <?php include_once '../scripts.php'; ?>
         </div>
-
     </body>
 
 </html>

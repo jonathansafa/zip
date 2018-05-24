@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="canonical" href="https://zipcaptions.com" />
-    <?php include_once 'head.php' ?>
-
+    <link rel="canonical" href="https://zipcaptions.com" />
+    <head>
+        <meta name="description" content="A leader in closed captioning and delivery. Your tv shows captioned and delivered in 72 hours or less.">
+        <title>zipcaptions.com | Home</title>
+        <?php include_once 'head.php' ?>
+    </head>
     <body id="page-top">
         <?php include_once 'sidebar-modal.php' ?>
         <div id="main-view">
@@ -16,7 +19,7 @@
                             <div class="header-btn"><a class="btn btn-default btn-xl open-nav" href="javascript:void(0)">Start Your First Order</a></div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <img class="home-head-img" src="img/home/home-image.png" alt=""/>
+                            <img class="home-head-img" src="<?= SITE_URL ?>/img/home/home-image.png" alt=""/>
                         </div>
 
                     </div>
@@ -26,7 +29,7 @@
             <section id="workedwith">
                 <div class="container">
                     <h3 class="worked-with-h3">Who We Work With</h3>
-                    <div class="text-center"><img src="img/home/worked_with.png" alt=""/></div>
+                    <div class="text-center"><img src="<?= SITE_URL ?>/img/home/worked_with.png" alt=""/></div>
                 </div>
             </section>
 
@@ -43,10 +46,10 @@
                                 <div class="compliance-head">so you don't have to.</div>
                             </div>
                             <div class="compliance-head-text">Our captions are compliant with all FCC standards for accuracy, screen placement, and timing.</div>
-                            <div class="fcc-btn text-left"><a class="btn-gray btn btn-default btn-home fcc" href="faq.php">Visit FAQ Page</a></div>
+                            <div class="fcc-btn text-left"><a class="btn-gray btn btn-default btn-home fcc" href="./faq">Visit FAQ Page</a></div>
                         </div>
                         <div class="col-md-7 col-sm-12 col-xs-12 img-view-prnt">
-                            <img src="img/home/closed-captioning.jpg" class="img-view" alt="" />
+                            <img src="<?= SITE_URL ?>/img/home/closed-captioning.jpg" class="img-view" alt="" />
                         </div>
                     </div>
                 </div>
@@ -57,7 +60,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-7 col-sm-12 col-xs-12 img-view-prnt">
-                            <img src="img/home/fast.jpg" class="img-view" alt="" />
+                            <img src="<?= SITE_URL ?>/img/home/fast.jpg" class="img-view" alt="" />
                         </div>
                         <div class="col-md-5 col-sm-12 col-xs-12 pad-bottom text-view">
                             <div class="compliance-head-main">
@@ -86,7 +89,7 @@
                             <div class="compliance-head-text">of any unforseen complications.</div>
                         </div>
                         <div class="col-md-7 col-sm-12 col-xs-12 img-view-prnt">
-                            <img src="img/home/orders.png" class="img-view" alt="" />
+                            <img src="<?= SITE_URL ?>/img/home/orders.png" class="img-view" alt="" />
                         </div>
                     </div>
                 </div>
@@ -104,23 +107,23 @@
                             <h1 class="desk-view">telling us.</h1>
                             <h1 class="mob-view">What our clients keep telling us.</h1>
                         </div>
-                        <div class="testimonial" id="testimonial_1" style="background-image: url('img/bg/reviews-bg-white1.png')">
+                        <div class="testimonial" id="testimonial_1" style="background-image: url('<?= SITE_URL ?>/img/bg/reviews-bg-white1.png')">
                             <p>“The team at Zipcaptions is a pleasure to work with and have always been extremely responsive. 
-They are the best value for your dollar, hands down!”</p>
+                                They are the best value for your dollar, hands down!”</p>
                             <p class="text-left testimonial-name">- Church by the Glades</p>
                             <p class="text-left testimonial-name-sub">Orlando, Florida</p>
                         </div>
-                        <div class="testimonial" id="testimonial_2" style="background-image: url('img/bg/reviews-bg-white1.png')">
+                        <div class="testimonial" id="testimonial_2" style="background-image: url('<?= SITE_URL ?>/img/bg/reviews-bg-white1.png')">
                             <p>“These prices really are unbeatable. They have saved us thousands of dollars over a short amount of time.”</p>
                             <p class="testimonial-name">- TBN Middle East</p>
                             <p class="text-left testimonial-name-sub">Orange Country, California</p>
                         </div>
-                        <div class="testimonial" id="testimonial_3" style="background-image: url('img/bg/reviews-bg-white1.png');">
+                        <div class="testimonial" id="testimonial_3" style="background-image: url('<?= SITE_URL ?>/img/bg/reviews-bg-white1.png');">
                             <p>"Many of our closed caption requests are handled by Zipcaptions. The process is extremely turn-key and the pricing can’t be beat which makes our clients very happy! I would refer anyone needing CC services to Zipcaptions."</p>
                             <p class="testimonial-name">- WPBF TV</p>
                             <p class="text-left testimonial-name-sub">West Plam Beach, Florida</p>
                         </div>
-                        <div class="testimonial" id="testimonial_4" style="background-image: url('img/bg/reviews-bg-white1.png')">
+                        <div class="testimonial" id="testimonial_4" style="background-image: url('<?= SITE_URL ?>/img/bg/reviews-bg-white1.png')">
                             <p>“I know we have a complex file delivery format but zipcaptions nailed it right away. So grateful to have found your services!”</p>
                             <p class="testimonial-name">- TBN</p>
                             <p class="text-left testimonial-name-sub">Orange Country, California</p>
@@ -138,7 +141,7 @@ They are the best value for your dollar, hands down!”</p>
             </section>
 
             <?php include_once 'footer.php'; ?>
-
+            <?php require_once './scripts.php' ?>;
         </div>
 
     </body>

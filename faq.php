@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="canonical" href="https://zipcaptions.com/faq" />
+    <link rel="canonical" href="https://zipcaptions.com/faq" />
 
-    <?php include_once 'head.php' ?>
+    <head>
+        <meta name="description" content="Get answers to your Frequently Asked Questions and discover how easy it is to get started with closed captioning and file delivery.">
+        <title>FAQs</title>
+        <?php include_once 'head.php' ?>
+    </head>
 
     <body id="page-top">
         <?php include_once 'sidebar-modal.php' ?>
@@ -56,7 +60,7 @@
                         <div class="col-md-9 col-sm-12 col-xs-12 faq-right">
                             <h1 style="font-weight:800; color:#252a2d !important;">Frequently Asked Questions</h1>
                             <div class="faq-right-sub">Don't want to search through the FAQs for an answer? No problem. Feel free to <span><b onclick="openChat();" class="pointer" style="font-weight:600;">chat with us</b></span> real quick, or drop our <a href='ma&#105;lto&#58;&#104;ell&#111;&#64;zipca&#112;&#116;&#37;69&#37;6F&#110;s&#37;2E%&#54;&#51;&#37;6Fm' style="font-weight:600;
-    color: #212529;">support team</a> an email. We'll be sure to get back to you ASAP!</div>
+                                                                                                                                                                                                        color: #212529;">support team</a> an email. We'll be sure to get back to you ASAP!</div>
                             <div class="row">
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <div class="faq-que-ans-block">
@@ -67,7 +71,7 @@
                                         <h3>How can we get our videos to zipcaptions?</h3>
                                         <div class="faq-answer">Most customers use FTP to deliver their highest quality files to us. Please use our chat, or email us to receive your personalized FTP to securely upload your files.</div>
                                     </div>
-                                   
+
                                     <div class="faq-que-ans-block">
                                         <h3>Do your captions meet the FCC requirements?</h3>
                                         <div class="faq-answer">Yes, we guarantee our caption files meet FCC requirements for open and closed captioning of web and tv video. Our caption files meet Section 508 requirements for video captioning.</div>
@@ -113,7 +117,7 @@
                     </div>
             </section>
             <?php include_once 'footer.php'; ?>
-
+            <?php require_once './scripts.php' ?>;
         </div>
 
     </body>

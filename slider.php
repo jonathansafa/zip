@@ -5,10 +5,10 @@
 
     <body id="page-top">
         <style>
-/*            body {
-                font-family: "Lato", sans-serif;
-                transition: background-color .5s;
-            }*/
+            /*            body {
+                            font-family: "Lato", sans-serif;
+                            transition: background-color .5s;
+                        }*/
 
             .sidenav1 {
                 height: 100%;
@@ -81,7 +81,7 @@
                             <div class="text-left"><a class="btn btn-default btn-xl "  onclick="openNav()" href="javascript:void(0)">Start Your First Order</a></div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <img class="home-head-img" src="img/home/99.png" alt=""/>
+                            <img class="home-head-img" src="<?= SITE_URL ?>/img/home/99.png" alt=""/>
                         </div>
 
                     </div>
@@ -91,7 +91,7 @@
             <section id="workedwith">
                 <div class="container">
                     <h3 class="worked-with-h3">Who We Work With</h3>
-                    <div class="text-center"><img src="img/home/worked_with.png" alt=""/></div>
+                    <div class="text-center"><img src="<?= SITE_URL ?>/img/home/worked_with.png" alt=""/></div>
                 </div>
             </section>
 
@@ -106,10 +106,10 @@
                             </div>
                             <div class="compliance-head-text">Our captions are compliant with all FCC standards for accuracy.</div>
                             <div class="compliance-head-text">Screen placement and timing.</div>
-                            <div class="fcc-btn text-left"><a class="btn-gray btn btn-default btn-xl" href="faq.php">Visit FAQ Page</a></div>
+                            <div class="fcc-btn text-left"><a class="btn-gray btn btn-default btn-xl" href="./faq">Visit FAQ Page</a></div>
                         </div>
                         <div class="col-md-7 col-sm-12 col-xs-12 ">
-                            <img src="img/home/closed-captioning.jpg" class="img-view" alt="" />
+                            <img src="<?= SITE_URL ?>/img/home/closed-captioning.jpg" class="img-view" alt="" />
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-7 col-sm-12 col-xs-12 ">
-                            <img src="img/home/fast.jpg" class="img-view" alt="" />
+                            <img src="<?= SITE_URL ?>/img/home/fast.jpg" class="img-view" alt="" />
                         </div>
                         <div class="col-md-5 col-sm-12 col-xs-12 pad-bottom text-view">
                             <div class="compliance-head-main">
@@ -148,7 +148,7 @@
                             <div class="compliance-head-text">of any unforseen complications.</div>
                         </div>
                         <div class="col-md-7 col-sm-12 col-xs-12 ">
-                            <img src="img/home/orders.png" class="img-view" alt="" />
+                            <img src="<?= SITE_URL ?>/img/home/orders.png" class="img-view" alt="" />
                         </div>
                     </div>
                 </div>
@@ -166,22 +166,22 @@
                             <h1 class="desk-view">telling us.</h1>
                             <h1 class="mob-view">What our clients keep telling us.</h1>
                         </div>
-                        <div class="testimonial" id="testimonial_1" style="background-image: url('img/bg/reviews-bg-white1.png')">
+                        <div class="testimonial" id="testimonial_1" style="background-image: url('<?= SITE_URL ?>/img/bg/reviews-bg-white1.png')">
                             <p>“You have streamlined our process, making it easier than ever to deliver programs. We couldn't be happier with the service you all have provided!”</p>
                             <p class="text-left testimonial-name">- Church by the Glades</p>
                             <p class="text-left testimonial-name-sub">Orlando, Florida</p>
                         </div>
-                        <div class="testimonial" id="testimonial_2" style="background-image: url('img/bg/reviews-bg-white1.png')">
+                        <div class="testimonial" id="testimonial_2" style="background-image: url('<?= SITE_URL ?>/img/bg/reviews-bg-white1.png')">
                             <p>“These prices really are unbeatable.The best in the business.”</p>
                             <p class="testimonial-name">- Middle east TV</p>
                             <p class="text-left testimonial-name-sub">Orange Country, California</p>
                         </div>
-                        <div class="testimonial" id="testimonial_3" style="background-image: url('img/bg/reviews-bg-white1.png')">
+                        <div class="testimonial" id="testimonial_3" style="background-image: url('<?= SITE_URL ?>/img/bg/reviews-bg-white1.png')">
                             <p>“YES! Such good people , such good work. Delivered on time, everytime.”</p>
                             <p class="testimonial-name">- WPBF</p>
                             <p class="text-left testimonial-name-sub">West Plam Beach, Florida</p>
                         </div>
-                        <div class="testimonial" id="testimonial_4" style="background-image: url('img/bg/reviews-bg-white1.png')">
+                        <div class="testimonial" id="testimonial_4" style="background-image: url('<?= SITE_URL ?>/img/bg/reviews-bg-white1.png')">
                             <p>“We have worked together for many years and couldn't be happier with the service provided. Thank you!!”</p>
                             <p class="testimonial-name">- Trinity Broadcasting</p>
                             <p class="text-left testimonial-name-sub">Orange Country, California</p>

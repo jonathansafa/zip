@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = $_POST["message"];
     }
 
- if (!$error) {
+    if (!$error) {
         require './SendMail.php';
         require './db.php';
 
@@ -43,13 +43,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $subject = 'Getting in Touch - zipcaptions.com';
         $user_tempate = '<p style="color:#b4b4b2;border-bottom: dotted 1px; padding-bottom:20px;font-weight:normal;font-size:10px;">##- Please type your reply above this line -##</p>' .
-            '<p style="color:black; font-weight:bold;font-size:18px;">Jonathan Safa <a href="https://zipcaptions.com" style="font-size:14px;font-weight:normal; color:black !important; text-decoration:none !important;">(zipcaptions.com)</a><br/><span style="font-size:12px;font-weight:normal; color:grey !important;font-weight:bold;">' .  date(DATE_COOKIE) . '</span><br><br>'  .'</p>' .
-         
-        'Hi ' . $name . ',<br/><br/>' .
+                '<p style="color:black; font-weight:bold;font-size:18px;">Jonathan Safa <a href="https://zipcaptions.com" style="font-size:14px;font-weight:normal; color:black !important; text-decoration:none !important;">(zipcaptions.com)</a><br/><span style="font-size:12px;font-weight:normal; color:grey !important;font-weight:bold;">' . date(DATE_COOKIE) . '</span><br><br>' . '</p>' .
+                'Hi ' . $name . ',<br/><br/>' .
                 'Thanks so much for submitting a ticket on our website. We usually respond in less than 1 day. So we\'ll be in touch shortly.<br/><br/>' .
                 'If you want to get in touch immediately, chat with us on our website... click on the bottom right Chat Logo and we\'ll be in touch in a matter of seconds!<br/><br/><br/>' .
-                'Have a great day!'  .
-            '<p style="color:#b4b4b2;padding-bottom:20px;padding-top:50px;line-height:20px;font-weight:normal;font-size:10px;">This email is meant for only the intended recipient, and may be a communication privileged by law. If you received this email in error, any review, use, dissemination, distribution, or copying of this email is strictly prohibited - please notify us immediately of the error and please delete this message from your system. Thank you.</p>';
+                'Have a great day!' .
+                '<p style="color:#b4b4b2;padding-bottom:20px;padding-top:50px;line-height:20px;font-weight:normal;font-size:10px;">This email is meant for only the intended recipient, and may be a communication privileged by law. If you received this email in error, any review, use, dissemination, distribution, or copying of this email is strictly prohibited - please notify us immediately of the error and please delete this message from your system. Thank you.</p>';
 
         $mail->smtpMail($email, $name, $subject, $user_tempate);
 
@@ -68,16 +67,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = false;
         $name = $email = $message = "";
     }
-    
-   
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="canonical" href="https://zipcaptions.com/contact" />
+    <link rel="canonical" href="https://zipcaptions.com/contact" />
 
-    <?php include_once 'head.php' ?>
+    <head>
+        <meta name="description" content="We’d love to discuss how zipcaptions is the leader in closed captioning your videos.">
+        <title>Contact Us</title>
+        <?php include_once 'head.php' ?>
+    </head>
 
     <body id="page-top">
         <link href="css/contacts.css" rel="stylesheet">
@@ -160,26 +161,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="container">
                     <div class="row text-center">
                         <div class="col">
-                            <a href="javascript:void(0)" onclick="openChat();"> <div><img src="img/contact/chat-icon.png" width="140px"/></div>
-                            <p class="option-p">Chat with Us</p>
-                       </a> </div>
-                        
-                        
+                            <a href="javascript:void(0)" onclick="openChat();"> <div><img src="<?= SITE_URL ?>/img/contact/chat-icon.png" width="140px"/></div>
+                                <p class="option-p">Chat with Us</p>
+                            </a> </div>
+
+
                         <div class="col"><a href='mail&#116;o&#58;%73%&#55;5pp&#111;r%7&#52;%&#52;&#48;&#122;i&#112;capt&#105;&#37;6F%6Es&#46;%&#54;3om'>
-                            <div><img src="img/contact/email-icon.png" width="140px"/></div>
-                            <p class="option-p">&#115;upp&#111;rt&#64;zip&#99;a&#112;tions&#46;c&#111;&#109;</p>
-                         </a>   </div>
-                      <div class="col">  <a href="tel:9096825815">
-                            <div><img src="img/contact/phone-icon.png" width="140px"/></div>
-                            <p class="option-p">Give Us a Call</p>
-                       </a> </div>
+                                <div><img src="<?= SITE_URL ?>/img/contact/email-icon.png" width="140px"/></div>
+                                <p class="option-p">&#115;upp&#111;rt&#64;zip&#99;a&#112;tions&#46;c&#111;&#109;</p>
+                            </a>   </div>
+                        <div class="col">  <a href="tel:9096825815">
+                                <div><img src="<?= SITE_URL ?>/img/contact/phone-icon.png" width="140px"/></div>
+                                <p class="option-p">Give Us a Call</p>
+                            </a> </div>
                     </div>
                 </div>
             </section>
-            
-            
+
+
             <?php include_once 'footer.php'; ?>
-            
+
             <?php include_once './scripts.php'; ?>
         </div>
     </body>

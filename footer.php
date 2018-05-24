@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-12 col-xs-12 pad-bottom">
                 <div class="footer-head">About</div>
-                <div class="footer-head-text"><a href="faq.php">FAQ</a></div>
+                <div class="footer-head-text"><a href="./faq">FAQ</a></div>
                 <div class="footer-head-text"><a href="#">Term of Service</a></div>
                 <div class="footer-head-text"><a href="#">Privacy Policy</a></div>
             </div>
@@ -36,4 +36,4 @@
     </div>
 </section>
 
-<?php require_once './scripts.php' ?>;
+
