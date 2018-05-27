@@ -3,7 +3,7 @@
 $nameErrClass = $emailErrClass = $messageErrClass = $errorMsg = "";
 $name = $email = $message = "";
 $success = $error = false;
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['contact_us'])) {
     if (empty($_POST["name"])) {
         $nameErrClass = "error";
         $error = true;
@@ -149,7 +149,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                         <div class="row form-group">
                             <div class="col-md-12 col-xs-12 col-xs-12">
-                                <button type="submit" class="btn send-msg form-btn btn-default">SEND MESSAGE</button>
+                                <button type="submit" name="contact_us" class="btn send-msg form-btn btn-default">SEND MESSAGE</button>
                             </div>
                         </div>
                     </form>

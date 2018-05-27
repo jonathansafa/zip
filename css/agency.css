@@ -853,7 +853,7 @@ header.masthead .intro-text .intro-heading {
     font-weight: 700;
 }
 
-#email{
+#email, #footer_email{
     width: 100%;
     height: 50px;
 }
@@ -1872,4 +1872,8 @@ header.masthead .intro-text .intro-heading {
     transform: rotate(-45deg);
     top: 39px;
     left: 8px;
+}
+
+.error{
+    border: 1px solid #ff0000; 
 }
