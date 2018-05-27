@@ -5,7 +5,7 @@
 
 <!-- Plugin JavaScript -->
 <script src="<?= SITE_URL ?>/vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>-->
 
 <!-- Plugin Animation -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
@@ -13,7 +13,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 <!-- Custom scripts for this template -->
-<script src="<?= SITE_URL ?>/js/agency.js"></script>
+<script src="<?= SITE_URL ?>/js/agency.min.js"></script>
 
 
 <!-- crisp chat -->
