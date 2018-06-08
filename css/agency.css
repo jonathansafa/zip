@@ -1297,7 +1297,7 @@ header.masthead .intro-text .intro-heading {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 3;
+    z-index: 11;
     background-color: rgba(0,0,0,0.8);
 }
 
