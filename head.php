@@ -1,5 +1,6 @@
 <?php
 define("SITE_URL", 'https://' . $_SERVER['HTTP_HOST']);
+//define("SITE_URL", 'http://localhost/zip');
 ?>
 <meta charset="utf-8">
 <meta name="google-site-verification" content="JLrrNXFFGWTnLPLvlEbUEX9EDBhb7I7z6MJikuKZHsM" />
