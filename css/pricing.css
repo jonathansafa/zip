@@ -241,7 +241,7 @@
     box-sizing: border-box;
     width: 50%;
     text-align: center;
-    color: #8898aa;
+    color: #FFF;
     font-size: 1em;
     line-height: 1.4em;
     border: 1px solid #373767;
@@ -370,20 +370,23 @@ a.price-footer-section, div.price-footer-section {
 }
 a.price-footer-section img, a.price-footer-section svg, div.price-footer-section img, div.price-footer-section svg {
     position: absolute;
-    width: 130px;
-    height: 130px;
-    left: -35px;
+    width: 110px;
+    height: 110px;
+    /*left: -35px;*/
+    left: 0px;
     top: calc(50% - 65px);
 }
 
 @media (min-width: 670px){
     a.price-footer-section img, a.price-footer-section svg, div.price-footer-section img, div.price-footer-section svg {
-        left: -50px;
+        /*left: -50px;*/
+        left: 0px;
     }
 }
 @media (min-width: 880px) {
     a.price-footer-section img, a.price-footer-section svg, div.price-footer-section img, div.price-footer-section svg {
-        left: -35px;
+        /*left: -35px;*/
+        left: 0px;
     }
 }
 a.price-footer-section svg .hover-fill-color, a.price-footer-section svg .hover-fill-blak-white, a.price-footer-section svg .hover-fillMedium, div.price-footer-section svg .hover-fill-color, div.price-footer-section svg .hover-fill-blak-white, div.price-footer-section svg .hover-fillMedium {
@@ -545,4 +548,83 @@ a.price-footer-section:hover svg .hover-fill-blak-white, div.price-footer-sectio
 .zip-pricing-Button-default:focus, .zip-pricing-Button-default:hover {
     color: #fff;
     background-color: #7795f8;
+}
+
+.Pricing-Header:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 680px;
+    height: 600px;
+    background: #fff;
+    -webkit-transform: skew(0,-12deg);
+    transform: skew(0,-12deg);
+}
+
+
+@media (max-width: 991px) {
+    .Pricing-Header:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 725px;
+        height: 600px;
+        background: #fff;
+        -webkit-transform: skew(0,-12deg);
+        transform: skew(0,-12deg);
+    }
+}
+
+@media (max-width: 670px) {
+    .Pricing-Header:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 1000px;
+        height: 600px;
+        background: #fff;
+        -webkit-transform: skew(0,-12deg);
+        transform: skew(0,-12deg);
+    }
+}
+
+@media (max-width: 669px){
+    .Pricing-Header:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 725px;
+        height: 600px;
+        background: #fff;
+        -webkit-transform: skew(0,-12deg);
+        transform: skew(0,-12deg);
+    }
+}
+
+@media (max-width: 570px) {
+    .Pricing-Header:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 1000px;
+        height: 600px;
+        background: #fff;
+        -webkit-transform: skew(0,-12deg);
+        transform: skew(0,-12deg);
+    }
+}
+
+.price-footer-section img:before {
+    background: #000;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
 }
