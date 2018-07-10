@@ -23,6 +23,7 @@
                     </div>
 
                     <div class="row middle-xs center-xs">
+                        <div class="plus-sign-div"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         <div class="plan-padding-zero col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <div class="Plan price-standard">
                                 <h2 class="price-title zip-pricing-Uppercase">Captioning Only</h2>
@@ -89,7 +90,7 @@
                 <div class="container">
                     <div class="row center-xs">
                         <div class="col-xs col-sm-12 col-md-9">
-                            <img src="<?= SITE_URL ?>/img/stopwatch.png" width="48" height="53" alt="stop watch">
+                            <img src="<?= SITE_URL ?>/img/stopwatch.png" width="50" height="50" alt="stop watch">
                             <p class="zip-pricing-BodyText TransfersAside-body">
                                 <strong class="TransfersAside-title-head">ALL FILES: 72 hours or less</strong>
                             </p>
@@ -132,7 +133,7 @@
 
                         <div class="zip-pricing-btn-grp buttons">
 
-                            <a class="zip-pricing-Button zip-pricing-Button-default" href="<?= SITE_URL ?>/contact">
+                            <a class="zip-pricing-Button zip-pricing-Button-default" href="mailto:jonathan@zipcaptions.com">
                                 SEND AN EMAIL
                             </a>
 
