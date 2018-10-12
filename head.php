@@ -19,7 +19,9 @@ define("SITE_URL", 'https://' . $_SERVER['HTTP_HOST']);
 <link href="<?= SITE_URL ?>/css/agency.min.css" rel="stylesheet">
 
 <!--<link rel="stylesheet" href="<?= SITE_URL ?>/css/jquery-ui.min.css">-->
-<link rel="stylesheet" href="<?= SITE_URL ?>/css/szy5knn.min.css">   
+<!--<link rel="stylesheet" href="<?= SITE_URL ?>/css/szy5knn.min.css">   --> 
+<link rel="stylesheet" href="https://use.typekit.net/szy5knn.css">
+
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
